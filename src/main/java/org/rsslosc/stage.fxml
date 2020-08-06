@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rsslosc.MainStage">
+   <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+            <children>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                  <children>
+                     <Text fx:id="leftText" strokeType="OUTSIDE" strokeWidth="0.0">
+                        <font>
+                           <Font size="54.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                  <children>
+                     <Text fx:id="rightText" strokeType="OUTSIDE" strokeWidth="0.0">
+                        <font>
+                           <Font size="54.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+      </children>
+   </StackPane>
+   <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <StackPane fx:id="wordsListPane" alignment="TOP_LEFT" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0">
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+      <children>
+         <Text fx:id="wordsList" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      </children>
+   </StackPane>
+   <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.topAnchor="30.0">
+      <children>
+         <VBox prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+            <children>
+               <Text fx:id="total" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" VBox.vgrow="ALWAYS" />
+            </children>
+            <StackPane.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </StackPane.margin>
+         </VBox>
+      </children>
+   </StackPane>
+   <StackPane prefHeight="150.0" prefWidth="200.0" rotate="-32.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+            <children>
+               <Text fx:id="okk" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                  <font>
+                     <Font size="23.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+      </children>
+   </StackPane>
+   <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuBar fx:id="title" VBox.vgrow="NEVER">
+         <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+         </Menu>
+         <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+         </Menu>
+         <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+         </Menu>
+      </MenuBar>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Text fx:id="words" style="&#10;" text="234" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="627.0">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Text fx:id="description" style="&#10;" text="146" textAlignment="CENTER" wrappingWidth="629.94482421875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </VBox>
+</AnchorPane>
